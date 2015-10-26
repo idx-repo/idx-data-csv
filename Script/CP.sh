@@ -4,8 +4,8 @@
 mkdir -p tmp/
 cd tmp/
 
-# Masukin data dari idx ke folder temporary
-cp -v ~/www.idxdata.co.id/Download_Data/Daily/Closing_Price/*.zip .
+# download semua
+wget -c -r -t 1 -w 1 http://idxdata.co.id/Download_Data/Daily/Closing_Price/
 
 # Ekstrak pake unzip tiap file-nya
 for x in *.zip
