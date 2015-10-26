@@ -6,7 +6,7 @@ cd tmp/
 
 # download semua
 wget -nH -np -nd -r -t 1 -w 1 \
-  http://www.idxdata2.co.id/Download_Data/Daily/Closing_Price/
+  http://idxdata3.co.id/Download_Data/Daily/Closing_Price/
 
 # Ekstrak pake unzip tiap file-nya
 for x in *.zip
