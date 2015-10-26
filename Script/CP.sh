@@ -4,8 +4,9 @@
 mkdir -p tmp/
 cd tmp/
 
-# Masukin data dari idx ke folder temporary
-cp -v ~/www.idxdata.co.id/Download_Data/Daily/Closing_Price/*.zip .
+# download semua
+wget -nH -np -nd -r -t 1 -w 1 \
+  http://idxdata3.co.id/Download_Data/Daily/Closing_Price/
 
 # Ekstrak pake unzip tiap file-nya
 for x in *.zip
@@ -26,5 +27,5 @@ cp -v *.csv ../Daily_Closing_Price/
 
 # Keluar dan hapus dari folder temporary 
 cd ..
-rm -rf tmp/
-echo "Temporary telah dihapus"
+#rm -rf tmp/
+#echo "Temporary telah dihapus"
