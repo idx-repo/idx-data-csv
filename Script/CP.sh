@@ -27,5 +27,5 @@ cp -v *.csv ../Daily_Closing_Price/
 
 # Keluar dan hapus dari folder temporary 
 cd ..
-#rm -rf tmp/
-#echo "Temporary telah dihapus"
+rm -rf tmp/
+echo "Temporary telah dihapus"
