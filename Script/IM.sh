@@ -18,7 +18,7 @@ for x in *.zip
 # Convert jadi csv pake dbfdump.pl dari paket perl-DBD-XBase
 for x in *.DBF
  do
-  dbfdump.pl --fs "|" $x > `basename $x ".DBF"`.csv
+  dbfdump --fs "|" $x > `basename $x ".DBF"`.csv
   echo "Convert DBF 2 PSV (Pipeline Separated Volume) $x"
  done
 
