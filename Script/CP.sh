@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+
+# Cek apakah dbfdump dari DBD::XBase ada
+. Script/Check.sh
 
 # Bikin folder temporary
 mkdir -p tmp/
